@@ -30,6 +30,6 @@ inter_eff.py
 small_pure.py 
 => to analyze the effect of phosphate on %Small, and use the mixed effects model to fit and analyze the data of each observation station.
 
-test_glmm.py => to show the partial effects of environmental factors on species biovolume and %Small.
+test_glmm.py => to analyze and model environmental data using principal component analysis (PCA) and generalized linear mixed models (GLMM).
 
 
