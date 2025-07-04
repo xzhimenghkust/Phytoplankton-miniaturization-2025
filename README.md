@@ -9,20 +9,27 @@ For any related questions, please contact us by email: zxube@connect.ust.hk
 
 Scripts for machine learning models (by Python):
 
-pca_%small.py => to perform principal component analysis (PCA) on the features in the environmental dataset to achieve data dimensionality reduction and analyze the contribution of each feature in the principal component.
+pca_%small.py 
+=> to perform principal component analysis (PCA) on the features in the environmental dataset to achieve data dimensionality reduction and analyze the contribution of each feature in the principal component.
 
-model_competition.py => to train and evaluate multiple regression models and compare their performance in predicting the transformed value of %Small.
+model_competition.py 
+=> to train and evaluate multiple regression models and compare their performance in predicting the transformed value of %Small.
 
-shap_RF => to model the data using a random forest regression model and explain the feature importance of the model predictions through SHAP analysis. 
+shap_RF 
+=> to model the data using a random forest regression model and explain the feature importance of the model predictions through SHAP analysis. 
 
-shap_XGBoost.py => to train an XGBoost regression model and analyze its feature importance, using SHAP values ​​for model interpretation.
+shap_XGBoost.py 
+=> to train an XGBoost regression model and analyze its feature importance, using SHAP values ​​for model interpretation.
 
-causial.py => to estimate the average treatment effect (ATE) and individual treatment effect (ITE) between multiple variables by using the Causal Forest method (i.e., between phosphate, temperature and %Small).
+causial.py 
+=> to estimate the average treatment effect (ATE) and individual treatment effect (ITE) between multiple variables by using the Causal Forest method (i.e., between phosphate, temperature and %Small).
 
-inter_eff.py => to visualize the relationship between phosphate, temperature, and %Small in an environmental dataset.
+inter_eff.py 
+=> to visualize the relationship between phosphate, temperature, and %Small in an environmental dataset.
 
-small_pure.py => to analyze the effect of phosphate on %Small, and use the mixed effects model to fit and analyze the data of each observation station.
+small_pure.py 
+=> to analyze the effect of phosphate on %Small, and use the mixed effects model to fit and analyze the data of each observation station.
 
-test_glmm.py =>
+test_glmm.py => to show the partial effects of environmental factors on species biovolume and %Small.
 
 
