@@ -1,6 +1,14 @@
 
 
-## using GLMM method to show the partial effects of environmental factors on species biovolume and %Small.
+##The goal of this script is to analyze and model environmental data using principal component analysis (PCA) and generalized linear mixed models (GLMM).
+
+# The main steps are as follows:
+# 1. Data loading and preprocessing: Load data from CSV files and perform logarithmic transformation on specific variables (such as BioV, DIN, PO4, etc.) to ensure normality of the data.
+# 2. Principal component analysis (PCA): Perform PCA analysis on standardized features, calculate and output the explained variance proportion of each principal component, and help understand the main sources of variation in the data.
+# 3. GLMM modeling: Based on the specified fixed effect variables (such as temperature, PO4) and species as random effects, use generalized linear mixed models for fitting to study the effects of these variables on biovolume (BioV).
+# 4. Species-level analysis: Perform GLMM fitting for each species separately, analyze the effect of PO4 on BioV, and draw the corresponding scatter plots and fitting curves to show the fitting results and significance level (p value) of each species.
+
+# PCA analysis helps understand the principal component composition of the data, and GLMM analysis reveals the relationship between environmental factors and species, providing a deeper understanding of bioV.
 
 import pandas as pd
 import numpy as np
@@ -68,7 +76,7 @@ if missing_columns:
 formula = f"{target} ~ {' + '.join(fixed_effects)}"
 print(f"Model formula: {formula}")
 
-# onstructing the GLMM model formula
+# constructing the GLMM model formula
 model = mixedlm(formula, data, groups=data["Species"])  # Use Species as a random effect group
 result = model.fit()
 print(result.summary())
