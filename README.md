@@ -8,7 +8,7 @@ For any related questions, please contact us by email: zxube@connect.ust.hk
 
 # Scripts for environmental factor distribution and calculation of phytoplankton size trends (by R software):
 Phytoplankton miniaturization.R
-=> (consist of: ENV data from 1986 to 2020; Community composition; Beta diversity; Size trend for each species; Community mean size trend; Small and large species (definition, size distribution and temporal trends); Relation between %small and resident time)
+=> (consist of: ENV data from 1986 to 2020; Community composition; Beta diversity; Size trend for each species; Community mean size trend; Small and large species; Relation between %small and resident time)
         
 
 # Scripts for machine learning models (by Python):
